@@ -38,6 +38,10 @@ body {
   gap: 20px;
 }
 
+.nav__link {
+  color: black;
+}
+
 a:visited {
   color: black;
 }

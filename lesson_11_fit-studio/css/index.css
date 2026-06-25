@@ -1,0 +1,211 @@
+.hero {
+  margin-top: 80px;
+
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+
+  background-image: url(../images/decor-large-icon.png);
+  width: 100%;
+  height: 48px;
+
+  position: absolute;
+  bottom: 106px;
+  z-index: -1;
+}
+
+.container--hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 28px;
+  max-height: 513px;
+}
+.hero__wrap-desc {
+  height: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__accent {
+  color: #3596ed;
+}
+
+.hero__text {
+  max-width: 440px;
+}
+
+.hero__wrap-img {
+  display: flex;
+  position: relative;
+}
+
+.hero__choice {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 22px;
+  max-width: 162px;
+
+  text-align: center;
+  color: #2c332f;
+
+  border: 1px solid #535755;
+  background: rgb(255 255 255 / 0.9);
+}
+
+/* секция Последние новости */
+
+.news__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.card-news {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 284px;
+
+  border: 1px solid #d3cbd9;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.card-news__desc {
+  max-width: 156px;
+  padding-top: 20px;
+  padding-inline: 20px;
+
+  margin-bottom: 12px;
+}
+.card-news__time {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #858e8a;
+}
+.card-news__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #2c332f;
+}
+.card-news__footer {
+  margin-top: auto;
+  max-width: 176px;
+  padding-inline: 20px;
+  padding-bottom: 20px;
+}
+.card-news__link {
+  display: inline-block;
+  padding-right: 16px;
+  text-decoration: none;
+  color: #3596ed;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+}
+
+.card-news__link::after {
+  content: "";
+
+  display: inline-block;
+
+  width: 22px;
+  height: 9px;
+  background-image: url(../images/arrow-icon.svg);
+
+  position: relative;
+  left: 8px;
+  transition: transform 0.3s;
+}
+
+.card-news__link:hover::after {
+  transform: translateX(5px);
+}
+
+.card-news__link:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* вопросы и ответы */
+
+.faq {
+  position: relative;
+}
+
+.faq::before {
+  content: "";
+
+  background-image: url(../images/decor-large-icon.png);
+  width: calc(50% - 200px);
+  height: 48px;
+
+  position: absolute;
+  top: 215px;
+  z-index: -1;
+}
+
+.faq__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 28px;
+}
+.faq__accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 700px;
+  width: 100%;
+}
+.faq__details {
+  border-block: 1px solid #d3cbd9;
+}
+.faq__question {
+  padding: 20px 49px 20px 20px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq__answer {
+  padding: 0 20px 20px 20px;
+}
+
+summary {
+  list-style: none;
+}
+
+summary::after {
+  content: "";
+  width: 17px;
+  height: 22px;
+  background-image: url(../images/Arrow-down.svg);
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary::after {
+  transform: translateY(-50%) rotate(180deg);
+}

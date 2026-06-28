@@ -1,0 +1,149 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
+article {
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+.article__title {
+  max-width: 596px;
+}
+
+.desc {
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.desc--space {
+  margin-bottom: 80px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper-first::after {
+  top: 100px;
+  left: 0;
+}
+
+.wrapper-second {
+  margin-bottom: 40px;
+}
+
+.wrapper-second::after {
+  bottom: 136px;
+  right: 0;
+}
+
+.button-absolute {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  position: absolute;
+  top: 100px;
+  left: -350px;
+
+  top: 50%;
+  left: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+
+  -ms-transform: translate(-50%, -50%);
+
+  transform: translate(-50%, -50%);
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  background-color: #3596ed;
+
+  border: none;
+  cursor: pointer;
+
+  -webkit-transition: background-color 0.2s;
+
+  transition: background-color 0.2s;
+}
+
+.button-absolute:hover {
+  background-color: #2f81c9;
+}
+
+.button-absolute:not(:disabled):active {
+  background-color: #1abb95;
+}
+
+.desc-group {
+  max-width: 744px;
+}
+
+.img {
+  max-width: 100%;
+}
+
+li::marker {
+  color: #3596ed;
+  font-size: 22px;
+}
+
+.list {
+  padding-left: 15px;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+@media (width <= 768px) {
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .decor::after {
+    display: none;
+  }
+
+  .desc--space {
+    margin-bottom: 40px;
+  }
+
+  article {
+    margin-block: 40px 60px;
+  }
+
+  .title--medium-small {
+    margin-bottom: 20px;
+  }
+}
+
+@media (width <=576px) {
+  .button-absolute {
+    width: 35px;
+    height: 35px;
+  }
+
+  .button-icon {
+    width: 16px;
+    height: 16px;
+  }
+}

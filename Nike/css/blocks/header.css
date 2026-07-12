@@ -1,9 +1,12 @@
 .header {
-  padding-block: 32px;
+  padding-block: 30px;
+
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: var(--layer-1);
+
   background-color: var(--bg-color);
 
   transition: box-shadow var(--transition-delay);

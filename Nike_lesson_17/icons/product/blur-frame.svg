@@ -1,0 +1,32 @@
+<svg
+  width="131"
+  height="39"
+  viewBox="0 0 131 39"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g filter="url(#blur)">
+    <rect
+      x="14.5"
+      y="14.5"
+      width="102"
+      height="10"
+      stroke="#FFEA00"
+      stroke-width="3"
+    />
+  </g>
+
+  <defs>
+    <filter
+      id="blur"
+      x="0"
+      y="0"
+      width="131"
+      height="39"
+      filterUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB"
+    >
+      <feGaussianBlur stdDeviation="6.5" />
+    </filter>
+  </defs>
+</svg>

@@ -1,0 +1,31 @@
+@media (width>768px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media (width<=768px) {
+  .burger {
+    position: relative;
+    z-index: var(--layer-3);
+
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .burger__icons-cross {
+    display: none;
+  }
+
+  .burger--open .burger__icons-cross {
+    display: block;
+  }
+
+  .burger--open .burger__icons-menu {
+    display: none;
+  }
+}

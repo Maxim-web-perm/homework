@@ -1,0 +1,125 @@
+.characteristics__video-wrap {
+  position: relative;
+}
+
+@media (width>576px) {
+  .characteristics__video-wrap {
+    margin-bottom: 60px;
+  }
+}
+
+@media (width<=576px) {
+  .characteristics__video-wrap {
+    margin-bottom: 40px;
+  }
+}
+
+.characteristics-video-preview {
+  border: 1px solid var(--main-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.characteristics__video-play-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  box-shadow:
+    var(--shadow-glow),
+    inset var(--shadow-glow);
+  background-color: var(--overlay-color);
+
+  cursor: pointer;
+
+  transition:
+    border-color var(--transition-delay),
+    box-shadow var(--transition-delay);
+}
+
+@media (any-hover: hover) {
+  .characteristics__video-play-link:hover {
+    border-color: var(--accent-color);
+    box-shadow:
+      var(--accent-glow-color),
+      inset var(--accent-glow-color);
+  }
+}
+
+/* PLAY LINK */
+@media (width<=576px) {
+  .characteristics__video-play-link {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (width>576px) {
+  .characteristics__video-play-link {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* PLAY ICON */
+@media (width<=576px) {
+  .characteristics__video-play-icon {
+    width: 10px;
+    height: 12px;
+
+    transform: translateX(1px);
+  }
+}
+
+@media (width>576px) {
+  .characteristics__video-play-icon {
+    width: 17px;
+    height: 24px;
+
+    transform: translateX(2px);
+  }
+}
+
+/* GRID CARDS */
+
+.characteristics__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+  gap: 40px 20px;
+}
+.characteristics__card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+/* CARD ICON */
+
+@media (width>576px) {
+  .characteristics__card-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (width<=576px) {
+  .characteristics__card-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.characteristic__discription {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 140%;
+  color: var(--main-color);
+}

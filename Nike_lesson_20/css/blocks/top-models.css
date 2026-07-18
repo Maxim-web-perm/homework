@@ -1,0 +1,142 @@
+.top-models__products {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 20px;
+}
+
+.top-models__product {
+  border: 2px solid var(--accent-color);
+  border-radius: 12px;
+  -webkit-box-shadow:
+    0 0 36px 0 var(--accent-glow-color),
+    inset 0 0 36px 0 var(--accent-glow-color);
+  box-shadow:
+    0 0 36px 0 var(--accent-glow-color),
+    inset 0 0 36px 0 var(--accent-glow-color);
+}
+
+.top-models__product-link {
+  height: 100%;
+  min-height: 204px;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 10px;
+
+  color: var(--main-color);
+  -webkit-transition: color var(--transition-delay);
+  transition: color var(--transition-delay);
+}
+
+@media (any-hover: hover) {
+  .top-models__product-link:hover {
+    color: var(--accent-color);
+  }
+}
+
+@media (width>576px) {
+  .top-models__product-link {
+    padding: 30px;
+  }
+}
+
+@media (width<=576px) {
+  .top-models__product-link {
+    padding: 20px;
+  }
+}
+
+.top-models__content {
+  /* max-width: 139px; */
+  width: 42%;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+.top-models__icon {
+  stroke: currentColor;
+}
+
+.top-models__picture {
+  /* min-width: 375px max-width: 1240px */
+  width: clamp(156px, 8.829rem + 3.93vw, 190px);
+  height: auto;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+}
+
+.top-models__wrap-img {
+  position: relative;
+
+  margin-top: auto;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+
+  -ms-flex-negative: 0;
+
+  flex-shrink: 0;
+}
+
+.top-models__wrap-img::after {
+  content: "";
+
+  position: absolute;
+  top: 71px;
+  left: -16px;
+
+  display: block;
+  width: 236px;
+  height: 47px;
+
+  background: url(../../icons/top-models/shadow-air-jordan-1.svg) center /
+    contain no-repeat;
+}
